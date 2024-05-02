@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="Lucas José de Araújo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Hello Celular - Um mundo conectado na palma da sua mão</title>
+    <link rel="icon" href="img/fav-icon-hello.png" type="image/png">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="../style/bootstrap.css">
+    <link rel="stylesheet" href="../style/bootstrap-icons/font/bootstrap-icons.css">
+    <!--Link com estilos usados no site-->
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../style/mediaqueries.css">
+    <!--Fontes usadas google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gradient-3">
+    <!--Nav bar-->
+    <nav id="nav-bar-posic" class="navbar navbar-expand-lg bg-body-tertiary font-pop">
+        <div class="container-fluid">
+            <a href="#" class="d-flex align-items-center col-md-2 mb-2 mb-md-0">
+                <img src="../img/logo-hello.png" alt="" style="max-width: 128px;">
+            </a>
+            <button id="btn-hamburgue" class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-self-center text-center ">
+                    <li class="nav-item">
+
+                        <a href="../index.html" class="nav-link btn-link"> Ínicio</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','meu-local')">Planos
+                            Controle</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','card-planIntenacional-posic')">Chip
+                            Internacional</button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','card-planIntenacional-posic')">TV , Filmes,
+                            Série</button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','card-planIntenacional-posic')">F.A.Q.</button>
+
+                    </li>
+
+                </ul>
+                <a href="https://tim.img.com.br/mapa-cobertura/"
+                    class="btn btn-primary  p-1 btnCobertura btn btn-primary btnCobertura ">Cobertura</a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!--Nav bar-->
+    <div class=" container">
+        <div class="row justify-content-center ">
+
+            <form id="myForm" class="container__formCadastro col-lg-8 ">
+
+                <section id="step1">
+                    <!-- Campos do primeiro passo -->
+                    <div class=" col-lg-12 col-10 mt-3 mb-3 align-self-center container">
+                        <div class="card__cadastro"> Estamos a poucos passos do seu novo chip</div>
+                        <legend class="align-intens-center">Dados de Cadastro</legend>
+                        <div class="row  container-cadastro  ">
+                            <div class="col-lg-3 col-md-6"><label class="form-label">Portabilidade:</label><br>
+                                <select name="portabilidade" id="portabilidade" class="form-select">
+                                    <option selected="selected" value="sim">Sim</option>
+                                    <option value="nao">Não</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3  col-sm-12"><label class="form-label">DDD:</label>
+                                <input name="ddd" type="text" id="ddd" maxlength="2" class="form-control">
+                            </div>
+
+                            <div class="col-lg-6  col-sm-12"> <label class="form-label">Telefone:</label>
+                                <input name="celular" type="text" id="celular" maxlength="15"
+                                    onkeyup="handlePhone(event)" placeholder="(xx)xxxx-xxxx" class="form-control" />
+                            </div>
+                        </div>
+                        <div id="" class="align-intens-center ">
+                            <button type="button" class="btn btn-roxo mt-2 text-white btn-next"
+                                onclick="nextStep()">Próximo</button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section id="step2" style="display: none;">
+                    <!-- Campos do segundo passo -->
+                    <div class=" col-lg-12 col-10 mt-3 mb-3 align-self-center container">
+                        <div class="card__cadastro"> Estamos quase lá !</div>
+                        <legend class="align-intens-center">Dados de Cadastro</legend>
+                        <div class="row  container-cadastro  ">
+                            <div class="col-lg-6 col-sm-12 "> <label class="form-label">Nome Completo:</label>
+                                <input type="text" name="nome" id="nome" required autofocus placeholder="Seu nome"
+                                    class="form-control">
+                            </div>
+                            <div class="col-lg-6  col-sm-12 "> <label class="form-label">Data de Nascimento:</label>
+                                <input type="date" name="nascimento" min="1900-12-31" max="2200-12-31" id="nascimento"
+                                    class="form-control"><br>
+                            </div>
+                            <div class="col-lg-6  col-sm-12 "> <label class="form-label">E-mail:</label>
+
+                                <input type="email" name="email" id="email" autocomplete="on"
+                                    placeholder="seuemail@email.com" required class="form-control">
+                            </div>
+                            <div class="col-lg-6  col-sm-12 "> <label class="form-label">Telefone:</label>
+                                <input type="text" name="telcontato" id="telcontato" maxlength="15"
+                                    onkeyup="handlePhone(event)" placeholder="(xx)xxxx-xxxx" class="form-control" />
+                                <br>
+                            </div>
+                            <div class="col-lg-6  col-sm-12">
+                                <label class="form-label">CPF:</label>
+                                <input oninput="mascaraCpf(this)" class="form-control" type="text" name="cpf" id="cpf"
+                                    placeholder="111.111.111-11">
+                            </div>
+
+                            <div class="col-lg-6  col-sm-12">
+
+                                <label class="form-label">RG:</label>
+                                <input type="text" name="rg" id="rg" maxlength="14" placeholder="123.456.78-9"
+                                    class="form-control">
+
+                            </div>
+
+
+                        </div>
+                        <div id="btn-cadastro-2">
+                            <button type="button" class="btn btn-roxo mt-2 text-white btn-prev"
+                                onclick="previousStep()">Anterior</button>
+                            <button type="button" class="btn btn-roxo mt-2 text-white btn-next"
+                                onclick="nextStep()">Próximo</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="step3" style="display: none;">
+                    <!-- Campos do terceiro passo -->
+                    <div class=" col-lg-12 col-10 mt-3 mb-3 align-self-center container">
+                        <div class="card__cadastro"> Agora estamos na parte final !</div>
+                        <legend class="align-intens-center">Dados de Cadastro</legend>
+                        <div class="row  container-cadastro  ">
+                            <div class="col-lg-9 col-sm-12">
+                                <label class="form-label">Endereço:</label>
+                                <input name="endereco" type="text" id="endereco" class="form-control">
+
+                            </div>
+                            <div class="col-lg-3 col-sm-4">
+                                <label class="form-label">Número:</label>
+                                <input name="endereco" id="endereco" type="text" id="numero" class="form-control ">
+                            </div>
+                            <div class="col-6"><label class="form-label">Complemento:</label>
+
+                                <input name="complemento" type="text" id="complemento" class="form-control">
+                            </div>
+                            <div class="col-6"> <label class="form-label">Cep:</label>
+                                <input name="cep" type="text" id="cep" maxlength="9" onkeypress="cepMascara(this)"
+                                    class="form-control">
+                            </div>
+
+                            <div class="col-12"><label class="form-label">Bairro:</label>
+                                <input name="bairro" type="text" id="bairro" class="form-control">
+                            </div>
+                            <div class="col-lg-6  col-sm-12"><label class="form-label">Cidade:</label>
+                                <input name="cidade" type="text" id="cidade" class="form-control">
+                            </div>
+
+                            <div class="col-lg-6  col-sm-12"> <label class="form-label">Estado:</label>
+                                <input name="estado" type="text" id="estado" maxlength="2" class="form-control">
+                            </div>
+
+
+                        </div>
+
+                        <button type="button" class="btn btn-roxo mt-2 text-white btn-prev"
+                            onclick="previousStep()">Anterior</button>
+                        <a id="fLnkSolicitar" class="btn btn-roxo mt-2 text-white"
+                            href="javascript:__doPostBack('fLnkSolicitar','')">Enviar
+                            Cadastro</a>
+                    </div>
+
+
+                </section>
+            </form>
+            <div class="col-xl-4 col-lg-4 col-sm-10  m-4 card-plan-nacional">
+                <p class=" text-orangered text-plan font-mont text-center mt-5">Cast</p>
+                <p class="text-orangered text-large-gb text-center font-pop">24GB</p>
+                <div class="col-12 text-center position-relative font-pop" id="">
+
+
+                    <p class=" text-orangered p-apenas ">Apenas
+                    </p>
+                    <p class="preco"><span>R$</span> 89,90
+                    <p>
+                    <p class="text-orangered mensal-plan">mensal</p>
+
+                </div>
+                <span class="m-4 text-center ">
+                    <p class="font-pop">Benefícios do plano:</p>
+                </span>
+                <div class="container text-center">
+
+                    <div class="col-12   ">
+                        <span class="text-benef font-pop">
+
+                            <p> <img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>12GB</b> DE DADOS
+                                MÓVEIS</p>
+                            <p class=""> <b>+ 12GB</b> BÔNUS</p>
+                        </span>
+                    </div>
+                    <!--Section Beneficios-->
+
+                    <div class="col-12 ">
+                        <span class="text-benef font-pop">
+                            <p><img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>120</b> minutos de
+                                ligações</p>
+                        </span>
+                    </div>
+                    <!--Section Beneficios-->
+                    <div class="col-12 mt-2 ">
+                        <span class="text-benef font-pop ">
+
+                            <p> <img src="img/fav-icon-hello.png" alt="" style="width:30px;">Pacote de 90
+                                SMS</p>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="col-12 align-self-center align-items-center position-relative benef-plan-text">
+                    <img src="../img/streaming-by-watch-horizontal-roxa-1@2x.png" alt="LogoWatch"
+                        class=" logoWatch-plan  mx-auto d-block">
+                </div>
+
+                <div class="col-12  text-center fw-bold ">
+                    <p class="font-pop text-indigo">CELULAR + TV + STREAMING</p>
+                    <p class="font-pop text-indigo">+</p>
+                </div>
+                <!--Section Watch-->
+
+                <div class="container ">
+                    <div class="col-12">
+                        <img src="../img/max-1@2x.png" alt="LogoWatch" class=" logoMax-plan  mx-auto d-block">
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-12">
+                    <div class="text-center m-3">
+                        <a href="" class="font-pop ">Ver canais inclusos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer text-white footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 m-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sobre a Hello</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.hellocelular.com.br/politica-de-privacidade.aspx"
+                                class="nav-link p-0 text-white" target="_blank">Política de
+                                privacidade</a></li>
+                        <li class=" nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Meu Hello (sobre
+                                nós)</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Aplicativo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Mapa de Cobertura</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 m-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="assets/Termo de Adesão 2024.pdf" target="_blank"
+                                class="nav-link p-0 text-white">Termo de adesão</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="assets/TERMOS DE USO HELLO.pdf" target="_blank"
+                                class="nav-link p-0 text-white"> Termos de uso
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12  text-center mt-5 m-sm-5">
+
+                    <img src="../img/ANATELEMPRESA.png" alt="imagem anatel empresa" class="img-anatel-footer ">
+
+
+                </div>
+            </div>
+
+            <div class="row align-intens-center align-middle border-top">
+                <div class="col-lg-3 col-md-12">
+                    <div class="d-flex flex-column flex-sm-row align-middle py-1   ">
+                        <ul class="list-unstyled d-flex m-3">
+
+                            <li class="ms-5 "><a class="" href="https://www.instagram.com/meuhello/" target="_blank"><i
+                                        target="_blank" class="bi bi-instagram link-light"></i></a>
+                            </li>
+                            <li class="ms-5 ">
+                                <a href="https://www.facebook.com/meuhellomobile/?locale=mk_MK&paipv=0&eav=AfZUtmaESje7XckE1bo38hv4KwnyiGq1RqJBU9h2FH6UJons5B_80qfr615WMYZV7r0&_rdr"
+                                    target="_blank"><i class="bi bi-facebook link-light"></i></a>
+                            </li>
+
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-12 text-center mt-3">
+                    <p class="text-center">© 2024 Company Inc. All rights reserved.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--Botão redes socias-->
+    <div class="d-flex flex-column align-middle d-flex  justify-content-center socialFixed ">
+        <div id="iconContainer" class=" oculto">
+            <div class="p-2"><a class="" href="https://www.instagram.com/meuhello/" target="_blank"><i target="_blank"
+                        class="bi bi-instagram  fs-1"></i></a></div>
+            <div class="p-2"><a
+                    href="https://www.facebook.com/meuhellomobile/?locale=mk_MK&paipv=0&eav=AfZUtmaESje7XckE1bo38hv4KwnyiGq1RqJBU9h2FH6UJons5B_80qfr615WMYZV7r0&_rdr"
+                    target="_blank"><i class="bi bi-facebook  fs-1"></i></a></div>
+            <div class="p-2"><a class="" href="https://api.whatsapp.com/send?phone=5511952813000" target="_blank"><i
+                        class="bi bi-whatsapp fs-1"></i></a></div>
+        </div>
+        <div class="p-2"><button id="toggleBtn" class="bi bi-headset fs-1 fixed-btn plus-fixed animebtnsocial"></button>
+        </div>
+
+    </div>
+    <script src="../script/bootstrap.js"></script>
+    <script src="../script/script.js"></script>
+
+</body>
+
+</html>

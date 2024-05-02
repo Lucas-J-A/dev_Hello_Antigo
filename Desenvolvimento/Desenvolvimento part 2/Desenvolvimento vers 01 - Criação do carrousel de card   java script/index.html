@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="Lucas José de Araújo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Hello Celular - Um mundo conectado na palma da sua mão</title>
+    <link rel="icon" href="img/fav-icon-hello.png" type="image/png">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/bootstrap-icons/font/bootstrap-icons.css">
+    <!--Link com estilos usados no site-->
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style/mediaqueries.css">
+    <!--Fontes usadas google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Nav bar-->
+    <nav id="nav-bar-posic" class="navbar navbar-expand-lg bg-body-tertiary font-pop">
+        <div class="container-fluid">
+            <a href="#" class="d-flex align-items-center col-md-2 mb-2 mb-md-0">
+                <img src="img/logo-hello.png" alt="" style="max-width: 128px;">
+            </a>
+            <button id="btn-hamburgue" class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-self-center text-center ">
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','planos__nacional')">Ínicio</button>
+                    </li>
+                    <li class="nav-item">
+
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','planos__nacional')">Planos
+                            Controle</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','card-planIntenacional-posic')">Chip
+                            Internacional</button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','card-planIntenacional-posic')">TV , Filmes,
+                            Série</button>
+
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn-link" href="#"
+                            onclick="irParaMeuLocal('nav-bar-posic','card-planIntenacional-posic')">F.A.Q.</button>
+
+                    </li>
+
+                </ul>
+                <a href="https://tim.img.com.br/mapa-cobertura/"
+                    class="btn btn-primary  p-1 btnCobertura btn btn-primary btnCobertura ">Cobertura</a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!--Nav bar-->
+    <!--Header Master-->
+    <header id="hearde-master-total" class=" header-master">
+        <div class="container px-4 overflow-hidden">
+
+            <div class="row d-flex  font-mont">
+                <div class="col-12 col-lg-6 header-principal-parent">
+                    <h1 class=" fw-bold text-principal mb-2 text-center-sm">Diga Hello a liberdade de se
+                        conectar</h1>
+                    <p class="lead text-center-sm">É hora de dizer adeus à telefonia como você conhece. Diga
+                        Hello
+                        ao seu novo
+                        mundo!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-lg-start button-header ">
+                        <button type="button" id="ver-plano"
+                            class="btn btn-primary btn-lg px-4 me-md-2 z-3 position-absolut btn-roxo btn-headerVerplanos"
+                            onclick="irParaMeuLocal('hearde-master-total','meu-local')">Ver
+                            Planos</button>
+
+                    </div>
+                    <p class="lead colt-xl-3 mt-3 text-center-sm">Faça parte do futuro da telefonia.</p>
+                </div>
+                <div class="col-12 col-lg-6  position-relative container-img-header ">
+
+
+                    <img src="img/celular-na-mão.png" class="img-mao mt-4" alt="app celular na mao" loading="lazy">
+                    <img src="img/max-1@2x.png" class=" max-mao anim-treme " alt="app celular na mao" loading="lazy">
+                    <img src="img/logowatch-1@2x.png" class="watch-mao anim-treme " alt="app celular na mao"
+                        loading="lazy">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <!--Header Master-->
+    <!--Slider-->
+    <div class="container">
+        <div class="align-items-center overflow-hidden ">
+            <div class="slider m-4">
+                <div class="logos fab fa-4x">
+                    <img src="img/wb-logo-lockup-hor-flat-pos-rgb-1@2x.png" alt="">
+                    <img src="img/cnn-1@2x.png" alt="">
+                    <img src="img/universal-1@2x.png" alt="">
+                    <img src="img/max-1@2x.png" alt="">
+                    <img src="img/2560pxlionsgate-logo-1@2x.png" alt="">
+                    <img src="img/paramount-1@2x.png" alt="">
+                    <img src="img/wb-logo-lockup-hor-flat-pos-rgb-1@2x.png" alt="">
+                    <img src="img/cnn-1@2x.png" alt="">
+                    <img src="img/universal-1@2x.png" alt="">
+                    <img src="img/max-1@2x.png" alt="">
+                    <img src="img/2560pxlionsgate-logo-1@2x.png" alt="">
+                    <img src="img/paramount-1@2x.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- place footer here -->
+    </div>
+    <!--Sobre Planos-->
+    <div class="container-fluid bg-gradient-2 section-center">
+        <div class="row flex-lg-row align-items-center ">
+
+            <div class="col-12 col-xl-6  align-self-start">
+                <img src="img/planos-hello.png" class="d-grid mx-lg-auto mx-sm-0 img-planos anim-expandir"
+                    alt="Celular com chip " loading="lazy">
+            </div>
+            <div class=" col-12 col-xl-6 col mt-5 ">
+                <p class=" lead col-lg-9 mt-5 text-center-sm">NOSSOS PLANOS</p>
+                <h2 class=" display-4 fw-bold text-body-emphasis lh-1 align-self-end mt-5 text-center-sm  font-mont">
+                    Temos os planos perfeitos para te acompanhar em qualquer lugar
+                </h2>
+                <p class=" lead col-lg-6  mt-5  text-justify font-pop">
+                    Um novo mundo além do seu celular! Criado para você! Sem burocracias para adesão, sem pegadinhas e
+                    com tantos benefícios quem nem parece uma operadora de telefonia móvel, a gente sabe.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="row align-items-center align-self-center text-center">
+                <div class="align-intens-center">
+                    <h2 class="text-body-emphasis lh-1 mt-5 mb-5">Arraste para o lado e descubra
+
+                        qual o seu novo plano</h2>
+                    <p class=" text-body-emphasis lh-1text-slim font-mont">Perfeito para estar online, checar emails e
+                        usar
+                        redes
+                        sociais
+                        levemente, todo dia.</p>
+
+                    <p class=" text-body-emphasis lh-1text-slim font-mont">Melhor Conexão 4G/5G</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="planos__nacional">
+            <!--card-amigavel-->
+            <div class="container mt-5 card-plan-nacional-desktop">
+                <div class="row  justify-content-center mb-2">
+                    <!-- Card Plan -->
+                    <div class="col-lg-3 col-12 card-plan-nacional m-2 ">
+                        <p class=" text-orangered text-plan font-mont text-center mt-5">Cast</p>
+                        <p class="text-orangered text-large-gb text-center font-pop">24GB</p>
+                        <span class="text-center ">
+                        </span>
+                        <span class="m-4 text-center ">
+                            <p class="font-pop">Benefícios do plano:</p>
+                        </span>
+                        <div class="container text-center">
+
+                            <div class="col-12   ">
+                                <span class="text-benef font-pop">
+
+                                    <p> <img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>12GB</b> DE
+                                        DADOS
+                                        MÓVEIS</p>
+                                    <p class=""> <b>+ 12GB</b> BÔNUS</p>
+                                </span>
+                            </div>
+                            <!--Section Beneficios-->
+
+                            <div class="col-12 ">
+                                <span class="text-benef font-pop">
+                                    <p><img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>120</b> minutos
+                                        de
+                                        ligações</p>
+                                </span>
+                            </div>
+                            <!--Section Beneficios-->
+                            <div class="col-12 mt-2 ">
+                                <span class="text-benef font-pop ">
+
+                                    <p> <img src="img/fav-icon-hello.png" alt="" style="width:30px;">Pacote de 90
+                                        SMS</p>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="col-12 align-self-center align-items-center position-relative benef-plan-text">
+                            <img src="img/streaming-by-watch-horizontal-roxa-1@2x.png" alt="LogoWatch"
+                                class=" logoWatch-plan  mx-auto d-block">
+                        </div>
+                        <div class="col-12 align-self-center">
+                            <p class="text-center text-slim font-pop benef-plan-text"> Além da melhor conexão, o seu
+                                plano
+                                conta
+                                também com
+                                a plataforma de
+                                streaming mais
+                                completa do Brasil.</p>
+                        </div>
+                        <div class="col-12  text-center fw-bold ">
+                            <p class="font-pop text-indigo">CELULAR + TV + STREAMING</p>
+                            <p class="font-pop text-indigo">+</p>
+                        </div>
+                        <!--Section Watch-->
+
+                        <div class="container ">
+                            <div class="col-12">
+                                <img src="img/max-1@2x.png" alt="LogoWatch" class=" logoMax-plan  mx-auto d-block">
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 text-center position-relative font-pop" id="">
+
+
+                            <p class=" text-orangered p-apenas ">Apenas
+                            </p>
+                            <p class="preco"><span>R$</span> 89,90
+                            <p>
+                            <p class="text-orangered mensal-plan">mensal</p>
+
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-assinarPlano font-pop">Assinar
+                                Plano!</a>
+
+
+                        </div>
+                        <div class="col-12">
+                            <div class="text-center m-3">
+                                <a href="" class="font-pop ">Ver canais inclusos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Plan -->
+                    <div class="col-lg-3 col-12 card-plan-nacional m-2">
+                        <p class=" text-orangered text-plan font-mont text-center mt-5">Cast</p>
+                        <p class="text-orangered text-large-gb text-center font-pop">24GB</p>
+                        <span class="text-center ">
+                        </span>
+                        <span class="m-4 text-center ">
+                            <p class="font-pop">Benefícios do plano:</p>
+                        </span>
+                        <div class="container text-center">
+
+                            <div class="col-12   ">
+                                <span class="text-benef font-pop">
+
+                                    <p> <img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>12GB</b> DE
+                                        DADOS
+                                        MÓVEIS</p>
+                                    <p class=""> <b>+ 12GB</b> BÔNUS</p>
+                                </span>
+                            </div>
+                            <!--Section Beneficios-->
+
+                            <div class="col-12 ">
+                                <span class="text-benef font-pop">
+                                    <p><img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>120</b> minutos
+                                        de
+                                        ligações</p>
+                                </span>
+                            </div>
+                            <!--Section Beneficios-->
+                            <div class="col-12 mt-2 ">
+                                <span class="text-benef font-pop ">
+
+                                    <p> <img src="img/fav-icon-hello.png" alt="" style="width:30px;">Pacote de 90
+                                        SMS</p>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="col-12 align-self-center align-items-center position-relative benef-plan-text">
+                            <img src="img/streaming-by-watch-horizontal-roxa-1@2x.png" alt="LogoWatch"
+                                class=" logoWatch-plan  mx-auto d-block">
+                        </div>
+                        <div class="col-12 align-self-center">
+                            <p class="text-center text-slim font-pop benef-plan-text"> Além da melhor conexão, o seu
+                                plano
+                                conta
+                                também com
+                                a plataforma de
+                                streaming mais
+                                completa do Brasil.</p>
+                        </div>
+                        <div class="col-12  text-center fw-bold ">
+                            <p class="font-pop text-indigo">CELULAR + TV + STREAMING</p>
+                            <p class="font-pop text-indigo">+</p>
+                        </div>
+                        <!--Section Watch-->
+
+                        <div class="container ">
+                            <div class="col-12">
+                                <img src="img/max-1@2x.png" alt="LogoWatch" class=" logoMax-plan  mx-auto d-block">
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 text-center position-relative font-pop" id="">
+
+
+                            <p class=" text-orangered p-apenas ">Apenas
+                            </p>
+                            <p class="preco"><span>R$</span> 89,90
+                            <p>
+                            <p class="text-orangered mensal-plan">mensal</p>
+
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-assinarPlano font-pop">Assinar
+                                Plano!</a>
+
+
+                        </div>
+                        <div class="col-12">
+                            <div class="text-center m-3">
+                                <a href="" class="font-pop ">Ver canais inclusos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card Plan -->
+                    <div class="col-lg-3 col-12 card-plan-nacional m-2">
+                        <p class=" text-orangered text-plan font-mont text-center mt-5">Cast</p>
+                        <p class="text-orangered text-large-gb text-center font-pop">24GB</p>
+                        <span class="text-center ">
+                        </span>
+                        <span class="m-4 text-center ">
+                            <p class="font-pop">Benefícios do plano:</p>
+                        </span>
+                        <div class="container text-center">
+
+                            <div class="col-12   ">
+                                <span class="text-benef font-pop">
+
+                                    <p> <img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>12GB</b> DE
+                                        DADOS
+                                        MÓVEIS</p>
+                                    <p class=""> <b>+ 12GB</b> BÔNUS</p>
+                                </span>
+                            </div>
+                            <!--Section Beneficios-->
+
+                            <div class="col-12 ">
+                                <span class="text-benef font-pop">
+                                    <p><img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>120</b> minutos
+                                        de
+                                        ligações</p>
+                                </span>
+                            </div>
+                            <!--Section Beneficios-->
+                            <div class="col-12 mt-2 ">
+                                <span class="text-benef font-pop ">
+
+                                    <p> <img src="img/fav-icon-hello.png" alt="" style="width:30px;">Pacote de 90
+                                        SMS</p>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="col-12 align-self-center align-items-center position-relative benef-plan-text">
+                            <img src="img/streaming-by-watch-horizontal-roxa-1@2x.png" alt="LogoWatch"
+                                class=" logoWatch-plan  mx-auto d-block">
+                        </div>
+                        <div class="col-12 align-self-center">
+                            <p class="text-center text-slim font-pop benef-plan-text"> Além da melhor conexão, o seu
+                                plano
+                                conta
+                                também com
+                                a plataforma de
+                                streaming mais
+                                completa do Brasil.</p>
+                        </div>
+                        <div class="col-12  text-center fw-bold ">
+                            <p class="font-pop text-indigo">CELULAR + TV + STREAMING</p>
+                            <p class="font-pop text-indigo">+</p>
+                        </div>
+                        <!--Section Watch-->
+
+                        <div class="container ">
+                            <div class="col-12">
+                                <img src="img/max-1@2x.png" alt="LogoWatch" class=" logoMax-plan  mx-auto d-block">
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 text-center position-relative font-pop" id="">
+
+
+                            <p class=" text-orangered p-apenas ">Apenas
+                            </p>
+                            <p class="preco"><span>R$</span> 89,90
+                            <p>
+                            <p class="text-orangered mensal-plan">mensal</p>
+
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <a href="#" class="btn btn-assinarPlano font-pop">Assinar
+                                Plano!</a>
+
+
+                        </div>
+                        <div class="col-12">
+                            <div class="text-center m-3">
+                                <a href="" class="font-pop ">Ver canais inclusos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card-amigavel-->
+
+
+        </div>
+        <div class=" carousel justify-content-center">
+            <div data-js="carousel__item" class="carousel__item carousel__item--visible row ">
+                <div class="col-lg-12 col-12 card-plan-nacional m-2 ">
+                    <p class=" text-orangered text-plan font-mont text-center mt-5">Cast</p>
+                    <p class="text-orangered text-large-gb text-center font-pop">24GB</p>
+                    <span class="text-center ">
+                    </span>
+                    <span class="m-4 text-center ">
+                        <p class="font-pop">Benefícios do plano:</p>
+                    </span>
+                    <div class="container text-center">
+
+                        <div class="col-12   ">
+                            <span class="text-benef font-pop">
+
+                                <p> <img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>12GB</b> DE
+                                    DADOS
+                                    MÓVEIS</p>
+                                <p class=""> <b>+ 12GB</b> BÔNUS</p>
+                            </span>
+                        </div>
+                        <!--Section Beneficios-->
+
+                        <div class="col-12 ">
+                            <span class="text-benef font-pop">
+                                <p><img src="img/fav-icon-hello.png" alt="" style="width:25px;"><b>120</b> minutos
+                                    de
+                                    ligações</p>
+                            </span>
+                        </div>
+                        <!--Section Beneficios-->
+                        <div class="col-12 mt-2 ">
+                            <span class="text-benef font-pop ">
+
+                                <p> <img src="img/fav-icon-hello.png" alt="" style="width:30px;">Pacote de 90
+                                    SMS</p>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="col-12 align-self-center align-items-center position-relative benef-plan-text">
+                        <img src="img/streaming-by-watch-horizontal-roxa-1@2x.png" alt="LogoWatch"
+                            class=" logoWatch-plan  mx-auto d-block">
+                    </div>
+                    <div class="col-12 align-self-center">
+                        <p class="text-center text-slim font-pop benef-plan-text"> Além da melhor conexão, o seu
+                            plano
+                            conta
+                            também com
+                            a plataforma de
+                            streaming mais
+                            completa do Brasil.</p>
+                    </div>
+                    <div class="col-12  text-center fw-bold ">
+                        <p class="font-pop text-indigo">CELULAR + TV + STREAMING</p>
+                        <p class="font-pop text-indigo">+</p>
+                    </div>
+                    <!--Section Watch-->
+
+                    <div class="container ">
+                        <div class="col-12">
+                            <img src="img/max-1@2x.png" alt="LogoWatch" class=" logoMax-plan  mx-auto d-block">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 text-center position-relative font-pop" id="">
+
+
+                        <p class=" text-orangered p-apenas ">Apenas
+                        </p>
+                        <p class="preco"><span>R$</span> 89,90
+                        <p>
+                        <p class="text-orangered mensal-plan">mensal</p>
+
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn btn-assinarPlano font-pop">Assinar
+                            Plano!</a>
+
+
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center m-3">
+                            <a href="" class="font-pop ">Ver canais inclusos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-js="carousel__item" class="carousel__item carousel__item--visible">
+                <img src="./img/2.jpg" />2
+            </div>
+
+            <div data-js="carousel__item" class="carousel__item">
+                <img src="./img/3.jpg" />3
+            </div>
+
+            <div class="carousel__actions">
+                <button data-js="carousel__button--prev" aria-label="Slide anterior">
+                    < </button>
+
+                        <button data-js="carousel__button--next" aria-label="Próximo slide">
+                            >
+                        </button>
+            </div>
+        </div>
+        <!--Cards Planos-->
+        <div class=" container-fluid mt-5 ">
+            <!--Linha principal-->
+            <div class="row  justify-content-center mb-2">
+                <!--Card-->
+
+            </div>
+            <!--Cards Planos end-->
+
+            <!--Section de converncimento -->
+            <div class="container mt-1">
+                <div class="row flex-lg-row align-items-center g-1 py-1">
+
+
+                    <div class="col-lg-6 align-self-center mt-5 mb-5">
+                        <h2
+                            class=" display-4 fw-bold text-body-emphasis lh-1 align-self-end ml-5 mt-5 text-center-sm font-mont">
+                            Ainda com dúvidas?
+                        </h2>
+                        <h3 class=" display-7  text-body-emphasis  align-self-end ml-5 mt-1 text-center-sm font-mont">
+                            Podemos te ajudar!</h3>
+                        <p class=" lead  mt-5 text-center-sm font-pop">Sabemos que é difícil acreditar em uma
+                            telefonia
+                            que tem a melhor conexão 4.5G/5G do Brasil, que te oferece streaming em vários
+                            dispositivos,
+                            além de inúmeros benefícios, mas vamos lá, tire as suas dúvidas.</p>
+
+
+                        <!-- <div class="d-grid gap-2 d-md-flex  button-header font-mont">
+                            <button type="button"
+                                class="btn btn-primary btn-lg px-4 me-md-2 z-3 position-absolut btn-roxo ">
+                                Não fui convencido</button>
+                        </div>-->
+
+
+
+                    </div>
+
+                    <div class="col-lg-6 col-12 align-self-center text-center   ">
+                        <div class=" m-3  text-body-emphasis   font-pop  ">
+                            <div class="row justify-content-md-center">
+                                <button class="accordion col-12 col-lg-10 text-center fw-bold">Posso fazer
+                                    portabilidade ?
+                                </button>
+                                <div class="col-lg-10 col-12 panel  ">
+                                    <p> Sim, é possível fazer a portabilidade do seu número para a nossa operadora
+                                        Hello! Ao realizar a portabilidade, seu número permanecerá o mesmo, mas será
+                                        transferido para a nossa rede. Para solicitar a portabilidade, basta
+                                        selecionar
+                                        a opção "Sim" para portabilidade durante o processo de cadastro em nosso
+                                        site.
+
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class=" m-3  text-body-emphasis   font-pop  ">
+                            <div class="row justify-content-md-center">
+                                <button class="accordion col-12 col-lg-10  text-center fw-bold">Funciona em todo o
+                                    Brasil?
+                                </button>
+                                <div class="col-12 col-lg-10  panel  ">
+                                    <p>Sim, a Hello funciona em todo o Brasil. Você pode usufruir dos serviços da
+                                        Hello
+                                        em qualquer região do país onde haja cobertura de rede. Nossa rede abrange
+                                        uma
+                                        ampla área, proporcionando conectividade confiável em todo o território
+                                        nacional.</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class=" m-3  text-body-emphasis   font-pop  ">
+                            <div class="row justify-content-md-center">
+                                <button class="accordion col-12 col-lg-10  text-center fw-bold">Posso ter suporte a
+                                    qualquer momento?
+                                </button>
+                                <div class="col-12 col-lg-10 panel  ">
+                                    <p>Sim! Nosso suporte técnico funciona 24 horas, 7 dias por semana e está a
+                                        total
+                                        disposição via whatsapp
+                                        para lhe auxiliar em todas as dúvidas, independente do horário e em qualquer
+                                        lugar do mundo.
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <!--Cards Planos-->
+
+    </div>
+    <!--Sobre Planos-->
+    <!--Planos iternacional -->
+    <section id="container-planos-ir" class="bg-gradient-3 container-planos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 align-self-center text-center mt-5 ">
+
+                    <h1 class="text-white font-mont">Tenha a mesma franquia em</h1>
+                    <p class="font-mont" b>mais de 180 países.</b></p>
+                </div>
+            </div>
+
+            <div class="container mt-1 justify-content-center text-justify">
+                <div class="row flex-lg-row align-items-center g-1 py-1">
+
+
+                    <div class="col-lg-6 align-self-center text-left text-white font-pop">
+                        <div class="row">
+                            <p class="fw-bold text-body-emphasis align-self-end ml-5 mt-5">
+                            </p>
+                            <div class="col-3 text-end ">
+                                <img src="img/group-497.svg" alt="" style="width:30px;">
+                            </div>
+                            <div class="col-9   ">
+                                <span class="text-benef">
+                                    Você faz viagens internacionais frequentes?
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                <p class="lead  m-3">Seja a trabalho, estudo ou lazer, a vida entre aeroportos faz
+                                    parte
+                                    do cotidiano de muitos Brasileiros e estar 100% conectado em qualquer lugar do
+                                    mundo
+                                    , torna essa viagem mais tranquila, segura e divertida.
+
+                                    Ideal para viajantes exigentes e clientes Hello!</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-6 align-self-center text-left text-white font-pop">
+                        <div class="row">
+                            <p class="fw-bold text-body-emphasis align-self-end ml-5 mt-5">
+                            </p>
+                            <div class="col-3 text-end ">
+                                <img src="img/group-497.svg" alt="" style="width:30px;">
+                            </div>
+                            <div class="col-9   ">
+                                <span class="text-benef">
+                                    Já pensou em ter a tranquilidade de sair e voltar do Brasil sem pensar em
+                                    conexão?
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                <p class=" lead  m-3">
+                                    Já imaginou a tranquilidade de viajar para fora do Brasil sem se preocupar com
+                                    conexões? Com a empresa Hello por trás, isso é possível.
+                                    Com diversos destinos internacionais, você pode desfrutar de
+                                    uma jornada tranquila, sem perde a conexão. Deixe as preocupações com conexão de
+                                    lado e tenha uma
+                                    experiência de viagem sem estresse, garantida pela Hello.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="container text-center">
+                    <div class="col-12 text-body-emphasis ">
+                        <p class="text-white text font-pop">Conheça os planos Hello Global</p>
+                    </div>
+                </div>
+                <div class="container  ">
+                    <div class="row  justify-content-center mb-2 ">
+                        <!--Card Plano Internacional-->
+                        <div id="card-planIntenacional-posic" class="col-lg-3 col-8 card-planIntenacional m-3 ">
+                            <!--caixa com planos -->
+
+                            <div class="container">
+                                <div class="col-12 text-center position-relative font-pop card-planIntenacionalHeader ">
+                                    <p class="lead text-white mt-3  ">HELLO CAST 20GB +</p>
+                                    <p class="lead text-indigo fw-bold ">E-SIM GLOBAL 20GB</p>
+                                    <p class="preco text-white "><span>R$</span> 89,90
+                                    <p>
+                                    <p class="mensal-planInter ">POR MÊS</p>
+
+                                </div>
+                            </div>
+                            <!--Beneficios do Plano-->
+                            <div class=" container card-radiusInternacional font-pop">
+                                <div class="row ">
+
+                                    <div class="col-12 align-self-center text-center ">
+                                        <div class="container p-3">
+                                            <p class=""><b>10GB</b> DE DADOS MÓVEIS</p>
+                                            <p class="">Ligações <b>Ilimitadas</b></p>
+                                            <p class=""><b>Pacote de 100 SMS</b></p>
+                                            <p class=""><b>Melhor Conexão 4G/5G</b></p>
+                                            <p class="">Cobertura em <b>mais de 180 países</b></p>
+                                            <p class="text-slim "> Além da melhor conexão, o seu plano conta também
+                                                com
+                                                a plataforma de
+                                                streaming mais
+                                                completa do Brasil.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container ">
+                                        <div class="col-12 align-self-center align-items-center">
+                                            <img src="img/streaming-by-watch-horizontal-roxa-1@2x.png" alt="LogoWatch"
+                                                class=" logoWatch-plan  mx-auto d-block">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 text-center mb-3">
+                                        <button class="btn btn-assinarPlano font-pop">Assinar Plano!</button><br>
+
+                                    </div>
+
+
+                                    <!--Section Watch-->
+                                </div>
+                            </div>
+
+                            <!--END Beneficios do Plano-->
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--Planos iternacional -->
+    <!--Footer-->
+    <div class="footer text-white footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 m-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sobre a Hello</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.hellocelular.com.br/politica-de-privacidade.aspx"
+                                class="nav-link p-0 text-white" target="_blank">Política de
+                                privacidade</a></li>
+                        <li class=" nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Meu Hello (sobre
+                                nós)</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Aplicativo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Mapa de Cobertura</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 m-5">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="assets/Termo de Adesão 2024.pdf" target="_blank"
+                                class="nav-link p-0 text-white">Termo de adesão</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="assets/TERMOS DE USO HELLO.pdf" target="_blank"
+                                class="nav-link p-0 text-white"> Termos de uso
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12  text-center mt-5 m-sm-5">
+
+                    <img src="img/ANATELEMPRESA.png" alt="imagem anatel empresa" class="img-anatel-footer ">
+
+
+                </div>
+            </div>
+
+            <div class="row align-intens-center align-middle border-top">
+                <div class="col-lg-3 col-md-12">
+                    <div class="d-flex flex-column flex-sm-row align-middle py-1   ">
+                        <ul class="list-unstyled d-flex m-3">
+
+                            <li class="ms-5 "><a class="" href="https://www.instagram.com/meuhello/" target="_blank"><i
+                                        target="_blank" class="bi bi-instagram link-light"></i></a>
+                            </li>
+                            <li class="ms-5 ">
+                                <a href="https://www.facebook.com/meuhellomobile/?locale=mk_MK&paipv=0&eav=AfZUtmaESje7XckE1bo38hv4KwnyiGq1RqJBU9h2FH6UJons5B_80qfr615WMYZV7r0&_rdr"
+                                    target="_blank"><i class="bi bi-facebook link-light"></i></a>
+                            </li>
+
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-12 text-center mt-3">
+                    <p class="text-center">© 2024 Company Inc. All rights reserved.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--Botão redes socias-->
+    <div class="d-flex flex-column align-middle d-flex  justify-content-center socialFixed ">
+        <div id="iconContainer" class=" oculto">
+            <div class="p-2"><a class="" href="https://www.instagram.com/meuhello/" target="_blank"><i target="_blank"
+                        class="bi bi-instagram  fs-1"></i></a></div>
+            <div class="p-2"><a
+                    href="https://www.facebook.com/meuhellomobile/?locale=mk_MK&paipv=0&eav=AfZUtmaESje7XckE1bo38hv4KwnyiGq1RqJBU9h2FH6UJons5B_80qfr615WMYZV7r0&_rdr"
+                    target="_blank"><i class="bi bi-facebook  fs-1"></i></a></div>
+            <div class="p-2"><a class="" href="https://api.whatsapp.com/send?phone=5511952813000" target="_blank"><i
+                        class="bi bi-whatsapp fs-1"></i></a></div>
+        </div>
+        <div class="p-2"><button id="toggleBtn" class="bi bi-headset fs-1 fixed-btn plus-fixed animebtnsocial"></button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="script/bootstrap.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

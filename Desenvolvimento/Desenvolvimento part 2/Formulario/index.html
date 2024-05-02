@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="POST">
+        <!-- actionpagina que vai receber as informação
+    method="get" passar por url
+    method="post" passar encapsulado
+    -->
+        <fieldset> <!-- caixa  do formulario-->
+            <legend>Dados de Cadastro</legend>
+            <label>Nome Completo:</label>
+            <input type="text" name="nome" id="nome" required autofocus placeholder="Seu nome"><br>
+            <label>Data de Nascimento:</label>
+            <input type="date" name="nascimento" min="2000-12-31" max="2017-12-31" id="nascimento"><br><br>
+            <!-- <input name="nascimento" type="text" id="nascimento" class="validate-required">  -->
+            <label>E-mail:</label>
+
+            <input type="email" name="email" id="email" autocomplete="on" placeholder="seuemail@email.com" required><br>
+            <label>Telefone:</label>
+            <input type="text" name="telcontato" id="telcontato" maxlength="15" onkeyup="handlePhone(event)"
+                placeholder="(xx)xxxx-xxxx" /> <br>
+
+            <label>CPF:</label>
+            <input oninput="mascaraCpf(this)" type="text" name="cpf" id="cpf" placeholder="111.111.111-11">
+            <label>RG:</label>
+            <input type="text" name="rg" id="rg" maxlength="14" placeholder="">
+
+            <label>Endereço:</label>
+            <input name="endereco" type="text" id="endereco">
+
+            <label>Número:</label>
+            <input name="endereco" id="endereco" type="text" id="numero">
+            <label>Complemento:</label>
+
+            <input name="complemento" type="text" id="complemento">
+
+            <label>Cep:</label>
+            <input name="cep" type="text" id="cep" maxlength="9" onkeypress="cepMascara(this)">
+
+            <label>Bairro:</label>
+            <input name="bairro" type="text" id="bairro">
+            <label>Cidade:</label>
+            <input name="cidade" type="text" id="cidade">
+            <label>Estado:</label>
+            <input name="estado" type="text" id="estado" maxlength="2">
+
+            <label>Portabilidade:</label><br>
+            <select name="portabilidade" id="portabilidade">
+                <option selected="selected" value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <label>DDD:</label>
+            <input name="ddd" type="text" id="ddd" maxlength="2">
+            <label>Telefone:</label>
+            <input name="celular" type="text" id="celular" maxlength="15" onkeyup="handlePhone(event)"
+                class="validate-required" placeholder="(xx)xxxx-xxxx" /> <br>
+            <input type="submit" name="btn-enviar" value="Enviar"><br>
+            <a id="fLnkSolicitar" class="btn btn--primary btn--block color--white type--uppercase"
+                href="javascript:__doPostBack('fLnkSolicitar','')">Enviar
+                Cadastro</a>
+        </fieldset><!--fim do formulario-->
+
+
+
+    </form>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+.logos>img {
+    width: 100px;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 100px;
+
+
+}
+
+.slider {
+
+    animation: slidein 25s linear infinite;
+
+    white-space: nowrap;
+
+
+    .logos {
+        height: auto;
+        width: 100vw;
+        display: inline-block;
+        margin: 0px 0;
+
+        .fab {
+            width: 25%;
+            animation: fade-in 0.1s forwards;
+
+        }
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+@media only screen and (min-width: 400px) {
+
+
+    .slider {
+        animation-duration: 4s;
+    }
+}
+
+@media only screen and (min-width: 763px) {
+
+
+    .slider {
+        animation-duration: 15s;
+    }
+}
+*/

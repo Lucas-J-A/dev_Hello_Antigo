@@ -1,0 +1,284 @@
+	/* Small devices (portrait tablets and large phones, 400px and up) */
+	@media only screen and (min-width: 300px) {
+		body {
+			width: 100%;
+		}
+
+		.max-mao {
+			display: none;
+
+		}
+
+		.watch-mao {
+			display: none;
+
+		}
+
+		.text-principal {
+			margin-top: 5vh;
+			font-size: 3rem;
+			text-align: center;
+		}
+
+
+		.img-mao {
+			width: 90%;
+			margin-left: auto;
+
+		}
+
+		.img-planos {
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.container-img-header {
+			height: 400px;
+		}
+
+		.text-center-sm {
+			text-align: center !important;
+		}
+
+		.button-header {
+			justify-content: center;
+		}
+
+		.btn-naoConvecido {
+			align-self: center;
+			width: 50vw;
+
+		}
+
+		.card-plan-nacional {
+			width: 80%;
+
+		}
+
+		.socialFixed {
+
+			bottom: 100px;
+			right: -5px;
+
+
+		}
+
+		.card-plan-nacional-cel {
+			display: block;
+		}
+	}
+
+	@media only screen and (min-width: 600px) {
+
+
+		.text-principal {
+			margin-top: 10vh;
+			font-size: 3rem;
+		}
+
+		.img-mao {
+			width: 85%;
+			margin-left: 10vw;
+		}
+
+		.container-img-header {
+			height: 700px;
+		}
+
+		.card-plan-nacional {
+			width: 80%;
+
+		}
+
+		.socialFixed {
+			position: fixed;
+			bottom: 120px;
+			right: 0;
+			border-radius: 50%;
+			box-sizing: border-box;
+
+		}
+
+	}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+
+
+		.section-center {
+			align-self: center;
+		}
+
+		.img-planos {
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.text-center-sm {
+			text-align: center;
+		}
+
+		.header-master {
+			height: 700px
+		}
+
+		.card-plan-nacional {
+			width: 40%;
+
+		}
+
+		.card-plan-nacional-cel {
+			display: block;
+		}
+	}
+
+	@media only screen and (min-width: 1024px) {
+		.text-principal {
+			margin-top: 30vh;
+			font-size: 4rem;
+		}
+
+		.img-mao {
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.text-center-sm {
+			text-align: left !important;
+		}
+
+		.card-plan-nacional {
+			width: 20%;
+
+		}
+
+		.card-plan-nacional-cel {
+			display: none;
+		}
+
+		.card-plan-nacional-desktop {
+			display: block;
+		}
+
+
+
+
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.header-principal {
+
+			font-size: 6rem;
+		}
+
+
+		.watch-mao {
+			display: block;
+
+		}
+
+		.max-mao {
+			display: block;
+			left: 320px;
+			top: 200px;
+			width: 15vw;
+		}
+
+		.watch-mao {
+			width: 14vw;
+			left: 70px;
+			top: px;
+
+		}
+
+		.img-mao {
+			width: 80%;
+
+
+		}
+
+		.header-master {
+			height: 90vh;
+		}
+
+		.btn-headerVerplanos {
+			align-self: center;
+			width: 25vw;
+
+
+		}
+
+
+		#mais1 {
+			display: none;
+		}
+
+		#mais2 {
+			display: none;
+		}
+
+		#mais3 {
+			display: none;
+		}
+
+
+	}
+
+	@media only screen and (min-width: 1350px) {
+		.header-master {
+			height: 700px
+		}
+
+		.img-mao {
+			width: 90%;
+			margin-bottom: 0;
+
+
+		}
+
+		.max-mao {
+			left: 370px;
+			top: 200px;
+			width: 12vw;
+		}
+
+		.watch-mao {
+			width: 10vw;
+			left: 150px;
+			top: 50px;
+			max-width: 1500px;
+		}
+
+
+
+	}
+
+	@media only screen and (min-width: 1450px) {
+		.header-master {
+			height: 700px
+		}
+
+		.img-mao {
+			width: 90%;
+			margin-bottom: 0;
+
+
+		}
+
+		.max-mao {
+			left: 370px;
+			top: 200px;
+			width: 10 vw;
+		}
+
+		.watch-mao {
+			width: 10vw;
+			left: 150px;
+			top: 50px;
+			max-width: 1500px;
+		}
+
+
+
+	}

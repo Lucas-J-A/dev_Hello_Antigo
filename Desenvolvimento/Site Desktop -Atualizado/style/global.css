@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  line-height: normal;
+
+}
+
+:root {
+  /* fonts */
+  --font-rubik: Rubik;
+  --font-morl: Morl;
+  --beneficio: Poppins;
+  --font-montserrat-alternates: "Montserrat Alternates";
+  --font-montserrat-alternates-medium: "Montserrat Alternates Medium";
+  --font-silka: Silka;
+
+  /* font sizes */
+  --font-size-base: 1rem;
+  --font-size-45xl: 4rem;
+  --font-size-lg: 1.125rem;
+  --font-size-mini: 0.938rem;
+  --font-size-xs: 0.75rem;
+  --font-size-36xl: 3.438rem;
+  --font-size-2xl: 1.313rem;
+  --beneficio-size: 0.875rem;
+  --font-size-3xs: 0.625rem;
+  --font-size-xl: 1.25rem;
+  --font-size-25xl: 1.8rem;
+  --font-size-smi: 0.813rem;
+  --font-size-59xl: 4.875rem;
+  --font-size-9xl: 1.75rem;
+
+  /* Colors */
+  --color-whitesmoke: #f1f1f1;
+  --color-darkslategray: #313131;
+  --color-orangered-100: #ff4d00;
+  --color-orangered-200: #dc4405;
+  --color-gray-100: #262626;
+  --color-gray-200: #252525;
+  --color-gray-300: #1a1a1a;
+  --secondary-kale-900: #0d1511;
+  --color-white: #fff;
+  --color-goldenrod: #f7b32b;
+  --color-indigo: #4e008d;
+  --color-dimgray: rgba(115, 115, 115, 0);
+  --plano: #e8e8e8;
+  --color-gainsboro-100: #d9d9d9;
+  --color-black: #000;
+  --gradient-1: linear-gradient(148deg, rgba(220, 68, 5, 1) 0%, rgba(247, 179, 43, 1) 100%);
+  --gradient-2: linear-gradient(138.09deg, rgba(220, 68, 5, 0), #dc4405);
+  --gradient-3: linear-gradient(106.45deg, #dc4405, #f7b32b);
+
+  /* Gaps */
+  --gap-mini: 0.938rem;
+  --gap-10xs: 0.188rem;
+  --gap-smi: 0.813rem;
+  --gap-11xl: 1.875rem;
+
+  /* Paddings */
+  --padding-xl: 1.25rem;
+  --padding-mini: 0.938rem;
+  --padding-5xs: 0.5rem;
+  --padding-7xl: 1.625rem;
+  --padding-xs: 0.75rem;
+  --padding-8xs: 0.313rem;
+  --padding-10xs: 0.188rem;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-231xl: 250px;
+  --br-6xl: 25px;
+  --br-5xs: 8px;
+  --br-lg: 18px;
+  --br-10xl: 29px;
+
+  /* Effects */
+  --padrao-site: 0px 0px 8px rgba(0, 0, 0, 0.18);
+  --sombra-plano: 0px 0px 65px -15px rgba(0, 0, 0, 0.85);
+
+}
